@@ -6,6 +6,6 @@ podman run \
   --platform linux/amd64 \
   --volume ${0:A:h:h}:/home \
   --workdir /home \
-  schemers/mit-scheme \
+  rlwrap-scheme \
   scheme --load './src/sdf/manager/load' \
   $@

@@ -1,0 +1,2 @@
+#! /usr/bin/env zsh
+podman build --platform linux/amd64 --tag rlwrap-scheme .
