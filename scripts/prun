@@ -1,0 +1,11 @@
+#! /usr/bin/env zsh
+
+podman run \
+  --rm \
+  --interactive \
+  --tty \
+  --platform linux/amd64 \
+  --volume ${0:A:h:h}:/home \
+  --workdir /home \
+  schemers/mit-scheme \
+  $@
