@@ -1,5 +1,4 @@
 #! /usr/bin/env zsh
-
 podman run \
   --rm \
   --interactive \
@@ -8,4 +7,5 @@ podman run \
   --volume ${0:A:h:h}:/home \
   --workdir /home \
   rlwrap-scheme \
+  scheme --load './src/sdf/manager/load' \
   $@
